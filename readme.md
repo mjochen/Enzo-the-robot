@@ -1,6 +1,6 @@
-# Rocky
+# Enzo
 
-The repo that combines all effort into Rocky, a home-assistant-robot.
+The repo that combines all effort into Enzo, a home-assistant-robot.
 
 
 ## 🦿 1. **Robot Base: Arduino + DC Motors + Tracks**
