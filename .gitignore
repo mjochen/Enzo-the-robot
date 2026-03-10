@@ -1,0 +1,5 @@
+# Ignore the entire data directory (Models and Databases)
+data/
+
+# Ignore your environment settings
+.env
