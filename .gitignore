@@ -3,3 +3,6 @@ data/
 
 # Ignore your environment settings
 .env
+
+# python
+venv

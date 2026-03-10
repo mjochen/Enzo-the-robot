@@ -38,9 +38,6 @@ docker exec -it ollama ollama pull gemma2:2b
 ```
 
 
-
-
-
 # Old information
 
 

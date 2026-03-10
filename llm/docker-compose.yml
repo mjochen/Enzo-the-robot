@@ -8,6 +8,17 @@ services:
       - "11434:11434"
     # If your VM has a GPU, you'd add the deploy/resources block here
 
+  context_gateway:
+    build: ./context_gateway
+    environment:
+      - CONTEXT_DIR=/context
+      - LLM_URL=http://ollama:11434/api/generate
+      - MODEL=${ACTIVE_MODEL}
+    volumes:
+      - ./context:/context
+    ports:
+      - "3001:8000"
+
   open-webui:
     image: ghcr.io/open-webui/open-webui:main
     container_name: open-webui

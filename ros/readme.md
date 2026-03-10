@@ -4,7 +4,6 @@
 https://blog.robotair.io/the-complete-beginners-guide-to-using-docker-for-ros-2-deployment-2025-edition-0f259ca8b378
 
 
-
 ## ROS?
 
 Ah, now we're getting to the heart of your project — a **sensor-rich, characterful robot with LLM-driven behavior and autonomy features** like battery monitoring and self-charging. That changes things a bit.
