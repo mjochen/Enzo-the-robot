@@ -3,6 +3,7 @@ import requests
 import json
 from pathlib import Path
 import os
+from datetime import datetime
 
 app = FastAPI()
 
@@ -38,6 +39,25 @@ def ask_llm():
 
     return response.json()
 
+@app.get("/ask")
+def ask_llm(q: str = ""):
+    # print("am here!")
+    prompt = q
+
+    print(build_prompt(q))
+
+    # response = requests.post(
+    #     LLM_URL,
+    #     json={
+    #         "model": MODEL,
+    #         "prompt": build_prompt(prompt),
+    #         "stream": False
+    #     }
+    # )
+
+    # return response.json()
+    return "!"
+
 def load_context():
     print("hello!")
     print(CONTEXT_DIR)
@@ -49,6 +69,9 @@ def load_context():
         print(file)
         with open(file) as f:
             context += "".join(f.readlines()) + "\n"
+
+    context += f"The current time is {datetime.now()}"
+
     return context
 
 

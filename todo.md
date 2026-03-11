@@ -5,6 +5,6 @@ Done:
 
 Todo:
 
-- Install ROS on in VM
+- Install ROS on in container
 - MicroRos
 - actually build robot

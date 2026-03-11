@@ -1,0 +1,19 @@
+services:
+  ros-master:
+    image: ros:humble
+    container_name: ros_dev
+    network_mode: host
+    stdin_open: true # allows interactive terminal
+    tty: true        # allows interactive terminal
+    volumes:
+      - ./ros_ws:/ros_ws
+    command: >
+      bash -c "apt-get update && apt-get install -y ros-humble-foxglove-bridge &&
+               source /opt/ros/humble/setup.bash &&
+               ros2 launch foxglove_bridge foxglove_bridge_launch.xml"
+
+  micro-ros-agent:
+    image: microros/micro-ros-agent:humble
+    container_name: uros_agent
+    network_mode: host
+    command: udp4 --port 8888
