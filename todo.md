@@ -1,5 +1,10 @@
 Done:
 
-* Setup vm for Rocky server
-* SS, Github
-* Install ROS on Pi
+- Setup vm for server
+- ssh-keys, Github
+
+Todo:
+
+- Install ROS on in VM
+- MicroRos
+- actually build robot
