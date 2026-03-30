@@ -1,3 +1,7 @@
+# Links
+
+https://www.instructables.com/Droid-Style-RC-Animatronics-Using-Bottango-and-ESP
+
 # Robot motors
 
 Great practical question — and yes, **NEMA17 stepper motors** are *easy to control accurately*, but they come with some real power and efficiency drawbacks for mobile robots.
